@@ -1,5 +1,6 @@
 #include "Account.h"
 #include "..\15_2\MyDate.h"
+#include <string>
 
 Account::Account()
 {
@@ -11,4 +12,18 @@ Account::Account()
 Account::Account(double balance) : Account()
 {
 	this->balance = balance;
+}
+
+std::string Account::toString() const
+{
+	std::string temp = "Account number: ";
+	temp.append(std::to_string(accountNumber));
+	temp.append("\tBalance: ");
+	temp.append(std::to_string(balance));
+	return temp;
+}
+
+int Account::getAccountNumber() const
+{
+	return this->accountNumber;
 }

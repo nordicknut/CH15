@@ -1,5 +1,6 @@
 #pragma once
 #include "..\15_2\MyDate.h"
+#include <string>
 
 class Account
 {
@@ -14,4 +15,6 @@ public:
 	Account(double deposit);
 	void deposit(double amount);
 	void withdraw(double amount);
+	virtual std::string toString() const;
+	int getAccountNumber() const;
 };

@@ -5,9 +5,21 @@
 class CheckingAccount : public Account
 {
 public:
+	CheckingAccount();
+	CheckingAccount(double deposit);
 	std::string toString() const;
 	void withdraw(double amount);
 };
+
+CheckingAccount::CheckingAccount()
+{
+	this->Account::Account();
+} 
+
+CheckingAccount::CheckingAccount(double deposit)
+{
+	this->Account::Account(deposit);
+}
 
 std::string CheckingAccount::toString() const
 {

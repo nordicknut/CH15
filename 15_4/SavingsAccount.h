@@ -6,9 +6,21 @@
 class SavingsAccount : public Account
 {
 public:
+	SavingsAccount();
+	SavingsAccount(double deposit);
 	std::string toString() const;
 	void withdraw(double amount);
 };
+
+SavingsAccount::SavingsAccount() : Account()
+{
+	this->Account::Account();
+}
+
+SavingsAccount::SavingsAccount(double deposit) : Account(deposit)
+{
+	this->Account::Account(deposit);
+}
 
 std::string SavingsAccount::toString() const
 {

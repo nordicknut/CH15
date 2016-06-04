@@ -17,5 +17,5 @@ Employee::Employee()
 
 string Employee::toString() const
 {
-	return "Employee: " + name;
+	return "Employee: " + name + "\n";
 }

@@ -17,17 +17,19 @@ using namespace std;
 
 int main()
 {
-	vector<Person> v;
-	v.push_back(Person());
-	v.push_back(Employee());
-	v.push_back(Faculty());
-	v.push_back(Staff());
-	v.push_back(Student());
+	Student *b = new Student();
+	cout << (*b).toString();
+
+	vector<Person*> v;
+	v.push_back(new Person());
+	v.push_back(new Employee());
+	v.push_back(new Faculty());
+	v.push_back(new Staff());
+	v.push_back(new Student());
 
 	for (size_t i = 0; i < v.size(); i++)
 	{
-		string temp = v.at(i).toString();
-		cout << temp;
+		cout << (*v.at(i)).toString();
 	}
 
     return 0;

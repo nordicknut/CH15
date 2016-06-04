@@ -9,5 +9,5 @@ Student::Student()
 
 string Student::toString() const
 {
-	return "Student: " + name;
+	return "Student: " + name + "\n";
 }

@@ -9,5 +9,5 @@ Staff::Staff()
 
 string Staff::toString() const
 {
-	return "Staff: " + name;
+	return "Staff: " + name + "\n";
 }

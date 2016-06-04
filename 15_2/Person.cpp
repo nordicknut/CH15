@@ -5,7 +5,7 @@ Person::Person()
 {
 	cout << "Enter name: ";
 	cin >> this->name;
-	cout << "Enter adress :";
+	cout << "Enter address: ";
 	cin >> this->address;
 	cout << "Enter phone number: ";
 	cin >> this->phoneNumber;
@@ -15,5 +15,5 @@ Person::Person()
 
 string Person::toString() const
 {
-	return "Person: " + name;
+	return "Person: " + name + "\n";
 }

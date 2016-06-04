@@ -11,5 +11,5 @@ Faculty::Faculty()
 
 string Faculty::toString() const
 {
-	return "Faculty: " + name;
+	return "Faculty: " + name + "\n";
 }

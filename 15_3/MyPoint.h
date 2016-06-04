@@ -2,7 +2,7 @@
 
 class MyPoint
 {
-private:
+protected:
 	double x, y;
 public:
 	MyPoint();

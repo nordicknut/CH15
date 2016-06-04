@@ -24,8 +24,9 @@ SavingsAccount::SavingsAccount(double deposit) : Account(deposit)
 
 std::string SavingsAccount::toString() const
 {
-	std::string temp = "Savings account number: " + this->getAccountNumber();
-	temp.append("\nBalance: ");
+	std::string temp = "Savings account number: ";
+	temp.append(std::to_string(this->getAccountNumber()));
+	temp.append("\tBalance: ");
 	temp.append(std::to_string(balance));
 	return temp;
 }

@@ -23,8 +23,9 @@ CheckingAccount::CheckingAccount(double deposit)
 
 std::string CheckingAccount::toString() const
 {
-	std::string temp = "Checking account number: " + this->getAccountNumber();
-	temp.append("\nBalance: ");
+	std::string temp = "Checking account number: ";
+	temp.append(std::to_string(this->getAccountNumber()));
+	temp.append("\tBalance: ");
 	temp.append(std::to_string(balance));
 	return temp;
 }

@@ -2,11 +2,15 @@
 #include "..\15_2\MyDate.h"
 #include <string>
 
+int Account::accountsActive = 0;
+
 Account::Account()
 {
 	this->balance = 0.0;
 	this->annualInterestRate = 1.3;
 	this->dateCreated = MyDate(2016, 6, 4);
+	Account::accountsActive++;
+	this->accountNumber = Account::getNewAccountNumber();
 }
 
 Account::Account(double balance) : Account()
@@ -26,4 +30,9 @@ std::string Account::toString() const
 int Account::getAccountNumber() const
 {
 	return this->accountNumber;
+}
+
+int Account::getNewAccountNumber()
+{
+	return Account::accountsActive;
 }

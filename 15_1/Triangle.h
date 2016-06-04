@@ -16,3 +16,5 @@ public:
 	double getPerimeter() const;
 	string toString() const;
 };
+
+bool isValidSides(double side1, double side2, double side3);

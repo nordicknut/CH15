@@ -14,4 +14,5 @@ public:
 	double getSide3() const;
 	double getArea() const;
 	double getPerimeter() const;
+	string toString() const;
 };

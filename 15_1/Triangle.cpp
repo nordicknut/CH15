@@ -41,3 +41,8 @@ double Triangle::getPerimeter() const
 {
 	return side1 + side2 + side3;
 }
+
+string Triangle::toString() const
+{
+	return "Triangle Object";
+}

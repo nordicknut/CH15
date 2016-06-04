@@ -4,7 +4,7 @@
 
 class Employee : public Person
 {
-private:
+protected:
 	string office;
 	double salary;
 	MyDate dateHired;

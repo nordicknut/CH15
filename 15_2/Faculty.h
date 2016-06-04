@@ -7,6 +7,7 @@ private:
 	int officeHours;
 	int rank;
 public:
+	Faculty();
 	string toString() const;
 	void setOfficeHours(int officeHours);
 	int getOfficeHours() const;

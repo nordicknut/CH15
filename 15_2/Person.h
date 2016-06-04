@@ -10,6 +10,7 @@ private:
 	string phoneNumber;
 	string emailAdress;
 public:
+	Person();
 	void setName();
 	string getName() const;
 	void setAddres();

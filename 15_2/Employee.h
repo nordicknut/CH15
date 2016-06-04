@@ -10,6 +10,7 @@ private:
 	MyDate dateHired;
 
 public:
+	Employee();
 	string toString() const;
 	void setOffice(string office);
 	string getOffice() const;
